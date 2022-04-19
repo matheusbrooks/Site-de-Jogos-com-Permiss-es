@@ -11,7 +11,6 @@
 		<?php
 		require_once "includes/banco.php";
 		require_once "includes/funcoes.php";
-		require_once "includes/login.php";
 		$ordem = $_GET['o'] ?? "n";
 		$chave = $_GET['c'] ?? "";
 		?>
@@ -21,7 +20,7 @@
 
 			<form method="get" action="index.php">
 			<p class="busca">
-
+				
 			Ordenar:
 			 <a href="index.php?o=n&c=<?php echo $chave;?>">Nome</a> |
 			 <a href="index.php?o=p&c=<?php echo $chave;?>">Produtora</a> |
